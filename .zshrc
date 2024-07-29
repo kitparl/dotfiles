@@ -105,6 +105,10 @@ if [ -f ~/.config/custom-alias/.my_aliases ]; then
     . ~/.config/custom-alias/.my_aliases
 fi
 
+if [ -f ~/.config/custom-alias/.env ]; then
+    . ~/.config/custom-alias/.env
+fi
+
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
