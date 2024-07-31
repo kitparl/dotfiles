@@ -1,8 +1,9 @@
 {
+  "font": "FontAwesome, Material Icons, sans-serif",
   "layer": "top", "position": "top",
   "modules-left": ["custom/logo", "clock",  "custom/weather", "disk", "memory", "cpu", "temperature", "custom/powerDraw", "hyprland/window" ],
   "modules-center": [  "hyprland/workspaces"],
-  "modules-right": ["tray",  "custom/clipboard", "backlight", "idle_inhibitor", "custom/colorpicker", "bluetooth", "pulseaudio", "network",  "battery" ],
+  "modules-right": ["backlight", "idle_inhibitor", "custom/colorpicker", "bluetooth", "pulseaudio", "network",  "battery" ],
   "reload_style_on_change":true,
 
   "custom/logo": {
@@ -20,7 +21,7 @@
 		"5": "",
 		"6": "",
 		"active": "",
-		"default": "" 
+		"default": ""
 	},
        "persistent-workspaces": {
          "*": [ 2, 3, 4, 5, 6 ]
@@ -42,13 +43,6 @@
   "interval": 10,
   "on-click": "firefox https://wttr.in"
 },
-
-"custom/clipboard":{
-  "format":"",
-  "on-click": "cliphist list | rofi -dmenu | cliphist decode | wl-copy",
-  "interval":86400
-},
-
 
 "clock": {
       "format": "{:%I:%M:%S %p}",
@@ -72,7 +66,7 @@
   "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
   "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
   "on-click": "blueman-manager",
- }, 
+ },
 
 "network": {
    "format-wifi": " ",
@@ -142,7 +136,7 @@
 
   "cpu": {
       "interval": 1,
-      "format": " {usage}%",
+      "format": "{icon} {usage}%",
       "min-length": 6,
       "max-length": 6,
     "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
@@ -161,7 +155,7 @@
 },
 
 "temperature": {
-  "format": " {temperatureC}°C",            
+  "format": " {temperatureC}°C",
   "format-critical": " {temperatureC}°C",
   "interval": 1,
   "critical-threshold": 80,
@@ -193,11 +187,6 @@
     "format-xrun": "{xruns} xruns",
     "format-disconnected": "DSP off",
     "realtime": true
-},
-
-"tray": {
-    "icon-size": 14,
-    "spacing": 10
 },
 
 "upower": {
