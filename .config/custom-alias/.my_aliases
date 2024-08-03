@@ -1,0 +1,84 @@
+# Git Aliases
+
+alias ga='git add'
+alias gc='git commit -m'
+alias gcm='git checkout main'
+alias gcd='git checkout dev'
+alias gco='git checkout'
+alias gd='git diff'
+alias gf='git fetch'
+alias gp='git pull'
+alias gpo='git push origin'
+alias gps='git push'
+alias gs='git status'
+alias gsh='git show'
+
+# System and Navigation Aliases
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias c='clear'
+alias e='exit'
+alias h='history'
+alias ll='ls -la'
+alias la='ls -A'
+alias l='ls -CF'
+alias home='cd ~'
+alias docs='cd ~/Documents'
+alias downloads='cd ~/Downloads'
+alias desk='cd ~/Desktop'
+alias bye='shutdown -h now'
+alias nap='systemctl suspend'
+alias snooze='systemctl hibernate'
+alias wakeup='systemctl reboot'
+
+# Networking Aliases
+
+alias speedtest='speedtest-cli'
+alias speedtest-s='speedtest-cli --simple'
+alias speedtest-l='speedtest-cli --list'
+alias myip='curl ifconfig.me'
+alias ports='netstat -tulanp'
+
+# Miscellaneous Aliases
+
+alias update='sudo dnf update && sudo dnf upgrade -y'
+alias clean= 'sudo dnf clean all'
+alias path='echo $PATH'
+alias reload='source ~/.bashrc'  # For Bash
+alias reloadzsh='source ~/.zshrc'  # For Zsh
+alias venv='source venv/bin/activate'
+alias py='python3'
+alias vim='nvm use 18.20.3 && nvim'
+alias vi='nvim'
+alias nano='nvim'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# Custom Aliases
+
+alias weather='curl wttr.in'
+alias extract='foo() { case "$1" in *.tar.bz2) tar xjf "$1" ;; *.tar.gz) tar xzf "$1" ;; *.bz2) bunzip2 "$1" ;; *.rar) unrar x "$1" ;; *.gz) gunzip "$1" ;; *.tar) tar xf "$1" ;; *.tbz2) tar xjf "$1" ;; *.tgz) tar xzf "$1" ;; *.zip) unzip "$1" ;; *.Z) uncompress "$1" ;; *.7z) 7z x "$1" ;; *) echo "'$1' cannot be extracted via extract()" ;; esac; }; foo'
+
+alias venv='source myenv/bin/activate'
+
+
+# Custom Navigation Aliases 
+
+alias tpath='cd ~/Documents/Company/techfino-server'
+alias ta='cd ~/Documents/Company/techfino-server/admin-ui && npx ng s -o --port 5000'
+alias tb='cd ~/Documents/Company/techfino-server/backend && npm run dev'
+alias tp='cd ~/Documents/Company/techfino-server/partner-ui && npx ng s -o --port 5001'
+alias tc='cd ~/Documents/Company/techfino-server/customer-ui && npx ng s -o --port 5002'
+alias mpath='cd ~/Documents/Company/techfino-msme'
+alias ma='cd ~/Documents/Company/techfino-msme/admin-ui && npx ng s -o --port 4300'
+alias mb='cd ~/Documents/Company/techfino-msme/backend && source venv/bin/activate && uvicorn app.main:app --reload'
+
+
+# Hyperland Aliases
+alias out='hyprctl dispatch exit'
+
+# Read Env File
+alias myenv='cat ~/.config/custom-alias/.env'
+
