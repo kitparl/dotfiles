@@ -54,7 +54,7 @@ alias py='python3'
 alias vim='nvm use 18.20.3 && nvim'
 alias vi='nvim'
 alias nano='nvim'
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias h='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # Custom Aliases
 
@@ -80,5 +80,5 @@ alias mb='cd ~/Documents/Company/techfino-msme/backend && source venv/bin/activa
 alias out='hyprctl dispatch exit'
 
 # Read Env File
-alias myenv='cat ~/.config/custom-alias/.env'
+alias p='cat ~/.config/custom-alias/.env'
 
