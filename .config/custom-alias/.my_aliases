@@ -78,7 +78,3 @@ alias mb='cd ~/Documents/Company/techfino-msme/backend && source venv/bin/activa
 
 # Hyperland Aliases
 alias out='hyprctl dispatch exit'
-
-# Read Env File
-alias p='cat ~/.config/custom-alias/.env'
-
