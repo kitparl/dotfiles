@@ -1,0 +1,89 @@
+import = ["/home/kitparl/.config/alacritty/themes/themes/catppuccin_mocha.toml"]
+
+[window]
+decorations = 'None'
+dynamic_padding = false
+padding = { x = 0, y = 0 }
+dynamic_title = true
+opacity = 0.95
+# startup_mode = "Fullscreen"
+
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[colors.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[colors.primary]
+background = "#0f0f0f"
+bright_foreground = "#eaeaea"
+dim_foreground = "#828482"
+foreground = "#c5c8c6"
+
+[colors.search.focused_match]
+background = "#000000"
+foreground = "#ffffff"
+
+[colors.search.matches]
+background = "#ffffff"
+foreground = "#000000"
+
+[colors.vi_mode_cursor]
+cursor = "#AC83D1"
+text = "#000000"
+
+# [cursor.style]
+# blink-interval = 700
+# blinking = "off"
+# shape = "Block"
+
+[font]
+builtin_box_drawing = true
+size = 18
+
+[font.bold]
+family = "terminal-font"
+style = "Bold"
+
+[font.bold_italic]
+family = "terminal-font"
+style = "Bold Italic"
+
+[font.italic]
+family = "terminal-font"
+style = "Bold Italic"
+
+[font.normal]
+family = "terminal-font"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "ToggleViMode"
+key = "V"
+mods = "Alt"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 100000
+multiplier = 3
+
+[shell]
+args = ["--login"]
+program = "/usr/bin/zsh"
+
+[env]
+TERM = "xterm-256color"
+# [window.dimensions]
+# columns = 90
+# lines = 27
+
+# [window.padding]
+# x = 0
+# y = 0
+
+# [footer_bar]
+# background= '#c5c8c6'
+# foreground= '#1d1f21'
