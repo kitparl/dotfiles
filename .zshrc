@@ -109,8 +109,9 @@ source <(fzf --zsh)
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 if [ -f ~/.config/custom-alias/.my_aliases ]; then
-    . ~/.config/custom-alias/.my_aliases
+    source ~/.config/custom-alias/.my_aliases
 fi
+
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -121,3 +122,4 @@ export PATH=/home/kitparl/.nvm/versions/node/v14.20.0/bin:/usr/local/bin:/usr/bi
 
 # Read Env File
 alias p='cat ~/.env'
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

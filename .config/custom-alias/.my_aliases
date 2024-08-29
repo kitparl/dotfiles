@@ -46,7 +46,7 @@ alias wifi='nmtui'
 # Miscellaneous Aliases
 
 alias update='sudo dnf update && sudo dnf upgrade -y'
-alias clean= 'sudo dnf clean all'
+# alias clean= 'sudo dnf clean all'
 alias path='echo $PATH'
 alias reload='source ~/.bashrc'  # For Bash
 alias reloadzsh='source ~/.zshrc'  # For Zsh
@@ -56,6 +56,8 @@ alias vim='nvm use 18.20.3 && nvim'
 alias vi='nvim'
 alias nano='nvim'
 alias h='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias neo='/usr/bin/git --git-dir=$HOME/.config/nvim/.my-neovim/ --work-tree=$HOME/.config/nvim'
+# alias n='/usr/bin/git --git-dir=/home/kitparl/.config/nvim/.my-neovim/ --work-tree=/home/kitparl/.config/nvim'
 
 # Custom Aliases
 
