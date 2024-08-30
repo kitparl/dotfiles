@@ -75,7 +75,7 @@
    "tooltip-format": "{ipaddr}",
    "tooltip-format-wifi": "{essid} ({signalStrength}%)  | {ipaddr}",
    "tooltip-format-ethernet": "{ifname} 🖧 | {ipaddr}",
-   "on-click": "~/.config/waybar/scripts/weather.sh"
+   "on-click": "alacritty -e nmtui"
 },
 
 
