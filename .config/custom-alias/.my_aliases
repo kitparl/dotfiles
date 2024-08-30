@@ -30,9 +30,6 @@ alias docs='cd ~/Documents'
 alias downloads='cd ~/Downloads'
 alias desk='cd ~/Desktop'
 alias bye='shutdown -h now'
-alias nap='systemctl suspend'
-alias snooze='systemctl hibernate'
-alias wakeup='systemctl reboot'
 
 # Networking Aliases
 
@@ -52,12 +49,12 @@ alias reload='source ~/.bashrc'  # For Bash
 alias reloadzsh='source ~/.zshrc'  # For Zsh
 alias venv='source venv/bin/activate'
 alias py='python3'
-alias vim='nvm use 18.20.3 && nvim'
+alias vim='nvim'
 alias vi='nvim'
 alias nano='nvim'
 alias h='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias neo='/usr/bin/git --git-dir=$HOME/.config/nvim/.my-neovim/ --work-tree=$HOME/.config/nvim'
-# alias n='/usr/bin/git --git-dir=/home/kitparl/.config/nvim/.my-neovim/ --work-tree=/home/kitparl/.config/nvim'
+alias n='/usr/bin/git --git-dir=$HOME/.config/nvim/.my-neovim/ --work-tree=$HOME/.config/nvim'
+alias rbs='~/Documents/Projects/ScriptedMind && npm run dev'
 
 # Custom Aliases
 
@@ -70,12 +67,12 @@ alias venv='source myenv/bin/activate'
 # Custom Navigation Aliases 
 
 alias tpath='cd ~/Documents/Company/techfino-server'
-alias ta='cd ~/Documents/Company/techfino-server/admin-ui && npx ng s -o --port 5000'
-alias tb='cd ~/Documents/Company/techfino-server/backend && npm run dev'
-alias tp='cd ~/Documents/Company/techfino-server/partner-ui && npx ng s -o --port 5001'
-alias tc='cd ~/Documents/Company/techfino-server/customer-ui && npx ng s -o --port 5002'
+alias ta='nvm use 14.20.0 && cd ~/Documents/Company/techfino-server/admin-ui && npx ng s -o --port 5000'
+alias tb='nvm use 14.20.0 && cd ~/Documents/Company/techfino-server/backend && npm run dev'
+alias tp='nvm use 14.20.0 && cd ~/Documents/Company/techfino-server/partner-ui && npx ng s -o --port 5001'
+alias tc='nvm use 14.20.0 && cd ~/Documents/Company/techfino-server/customer-ui && npx ng s -o --port 5002'
 alias mpath='cd ~/Documents/Company/techfino-msme'
-alias ma='cd ~/Documents/Company/techfino-msme/admin-ui && npx ng s -o --port 4300'
+alias ma=' && nvm use 14.20.0 && cd ~/Documents/Company/techfino-msme/admin-ui && npx ng s -o --port 4300'
 alias mb='cd ~/Documents/Company/techfino-msme/backend && source venv/bin/activate && uvicorn app.main:app --reload'
 
 
