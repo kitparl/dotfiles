@@ -1,40 +1,51 @@
+/* General styling */
 * {
-    border: none;
-    font-size: 14px;
-    color: #ffffff;
-    font-family: "JetBrainsMono Nerd Font,JetBrainsMono NF" ;
-    min-height: 25px;
+  border: none;
+  font-size: 14px;
+  font-family: "JetBrainsMono Nerd Font", "JetBrainsMono NF", monospace;
+  min-height: 25px;
 }
 
 window#waybar {
   background: transparent;
   margin: 5px;
- }
+}
 
+/* Module styling */
 #custom-logo {
   padding: 0 10px;
 }
 
+/* Dark background for all modules */
+.modules-right,
+.modules-center,
+.modules-left {
+  border-radius: 15px;
+  margin-top: 2px;
+  background: #1e1e1e;
+  /* Dark grey background */
+}
+
+/* Right side modules */
 .modules-right {
   padding-left: 5px;
   border-radius: 15px 0 0 15px;
-  margin-top: 2px;
-  background: #000000;
 }
 
+/* Center modules */
 .modules-center {
   padding: 0 15px;
-  margin-top: 2px;
-  border-radius: 15px 15px 15px 15px;
-  background: #000000;
+  background: white;
+  color: white;
+  /* White text */
 }
 
+/* Left side modules */
 .modules-left {
   border-radius: 0 15px 15px 0;
-  margin-top: 2px;
-  background: #000000;
 }
 
+/* Common module styling */
 #battery,
 #custom-clipboard,
 #custom-colorpicker,
@@ -55,48 +66,128 @@ window#waybar {
 #workspaces,
 #clock {
   padding: 0 5px;
+  color: #d0d0d0;
+  /* Light grey for text */
 }
+
+/* Specific module styling */
 #pulseaudio {
   padding-top: 3px;
 }
 
+#custom-powerDraw {
+  color: #e5c07b;
+  /* Yellow for power draw */
+}
+
+/* Critical and muted states */
 #temperature.critical,
 #pulseaudio.muted {
-  color: #FF0000;
+  color: #ff6c6b;
+  /* Bright red */
   padding-top: 0;
 }
 
-
-
-
-#clock{
-  color: #5fd1fa;
+/* Clock module styling */
+#clock {
+  color: #61afef;
+  /* Light blue */
 }
 
+/* Battery module styling */
 #battery.charging {
-    color: #ffffff;
-    background-color: #26A65B;
+  color: #ffffff;
+  background-color: #2e8b57;
+  /* Dark green */
 }
 
 #battery.warning:not(.charging) {
-    background-color: #ffbe61;
-    color: black;
+  background-color: #e5c07b;
+  /* Yellow */
+  color: black;
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  background-color: #be5046;
+  /* Dark red */
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
-
+/* Keyframes for blinking animation */
 @keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+/* Additional module styling for clarity */
+#network {
+  color: #56b6c2;
+  /* Cyan */
+}
+
+#cpu {
+  color: #e5c07b;
+  /* Yellow */
+}
+
+#memory {
+  color: #98c379;
+  /* Green */
+}
+
+#disk {
+  color: #c678dd;
+  /* Purple */
+}
+
+#bluetooth {
+  color: #61afef;
+  /* Light blue */
+}
+
+#custom-weather {
+  color: #61afef;
+  /* Light blue */
+}
+
+#idle_inhibitor {
+  color: #e5c07b;
+  /* Yellow */
+}
+
+#workspaces {
+  color: #61afef;
+  /* Light blue */
+}
+
+#custom-colorpicker {
+  color: #ff6c6b;
+  /* Bright red */
+}
+
+#backlight {
+  color: #d0d0d0;
+  /* Light grey */
+}
+
+#jack {
+  color: #e5c07b;
+  /* Yellow */
+}
+
+#tray {
+  color: #d0d0d0;
+  /* Light grey */
+}
+
+#window {
+  color: #56b6c2;
+  /* Cyan */
 }

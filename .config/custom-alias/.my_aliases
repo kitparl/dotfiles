@@ -55,6 +55,7 @@ alias nano='nvim'
 alias h='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias n='/usr/bin/git --git-dir=$HOME/.config/nvim/.my-neovim/ --work-tree=$HOME/.config/nvim'
 alias rbs='~/Documents/Projects/ScriptedMind && npm run dev'
+alias leetcode='nvim leetcode.nvim'
 
 # Custom Aliases
 

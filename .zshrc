@@ -1,6 +1,13 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+# set nvim as default editor
+if [ $(command -v nvim) ]; then
+	export EDITOR=$(which nvim)
+	alias vim=$EDITOR
+fi
 
+export SUDO_EDITOR=$EDITOR
+export VISUAL=$EDITOR
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/bin:$PATH"
