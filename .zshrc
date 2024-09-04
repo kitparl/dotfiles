@@ -131,3 +131,4 @@ export PATH=/home/kitparl/.nvm/versions/node/v18.20.3/bin:/usr/local/bin:/usr/bi
 alias p='cat ~/.env'
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH=$PATH:~/go/bin
+export PATH=$PATH:~/.local/bin
