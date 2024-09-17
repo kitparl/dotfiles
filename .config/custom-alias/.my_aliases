@@ -58,6 +58,7 @@ alias rbs='~/Documents/Projects/ScriptedMind && npm run dev'
 alias leetcode='nvim leetcode.nvim'
 alias lazyconf='nvim ~/.config/nvim'
 alias td='tldr'
+alias createvenv='python3 -m venv venv'
 
 
 
@@ -77,7 +78,7 @@ alias tb='nvm use 14.20.0 && cd ~/Documents/Company/techfino-server/backend && n
 alias tp='nvm use 14.20.0 && cd ~/Documents/Company/techfino-server/partner-ui && npx ng s -o --port 5001'
 alias tc='nvm use 14.20.0 && cd ~/Documents/Company/techfino-server/customer-ui && npx ng s -o --port 5002'
 alias mpath='cd ~/Documents/Company/techfino-msme'
-alias ma=' && nvm use 14.20.0 && cd ~/Documents/Company/techfino-msme/admin-ui && npx ng s -o --port 4300'
+alias ma='cd ~/Documents/Company/techfino-msme/admin-ui && nvm use 14.20.0 && cd ~/Documents/Company/techfino-msme/admin-ui && npx ng s -o --port 4300'
 alias mb='cd ~/Documents/Company/techfino-msme/backend && source venv/bin/activate && uvicorn app.main:app --reload'
 
 
