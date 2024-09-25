@@ -72,7 +72,7 @@ alias venv='source myenv/bin/activate'
 
 # Custom Navigation Aliases 
 
-alias tpath='cd ~/documents/company/techfino-server'
+alias tpath='cd /home/kitparl/Documents/Company/techfino-server'
 alias ta='nvm use 14.20.0 && cd ~/Documents/Company/techfino-server/admin-ui && npx ng s -o --port 5000'
 alias tb='nvm use 14.20.0 && cd ~/Documents/Company/techfino-server/backend && npm run dev'
 alias tp='nvm use 14.20.0 && cd ~/Documents/Company/techfino-server/partner-ui && npx ng s -o --port 5001'
