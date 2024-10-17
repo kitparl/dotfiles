@@ -84,3 +84,8 @@ alias mb='cd ~/Documents/Company/techfino-msme/backend && source venv/bin/activa
 
 # Hyperland Aliases
 alias out='hyprctl dispatch exit'
+
+# Custom Tools Aliases
+
+
+alias todo='java -jar /usr/local/bin/todo-cli-1.0-SNAPSHOT.jar'
