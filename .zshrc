@@ -133,3 +133,21 @@ alias p='cat ~/.env'
 export PATH=$PATH:~/go/bin
 export PATH=$PATH:~/.local/bin
 export CXX=clang++
+
+
+# Function to force tmux even if inside another session
+function tmux-force() {
+    TMUX="" tmux
+}
+
+# Function to safely handle tmux sessions
+function tm() {
+    if [ -z "$TMUX" ]; then
+        # Not in a tmux session, so start one
+        tmux
+    else
+        # Already in tmux, warn user
+        echo "Already in a tmux session"
+        echo "Use 'tmux-force' if you really want to nest sessions"
+    fi
+}
