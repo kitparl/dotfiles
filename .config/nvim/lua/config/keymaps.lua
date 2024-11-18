@@ -65,7 +65,7 @@ vim.api.nvim_set_keymap(
   ":lua require('run_program.maven_run').run('dependency:resolve')<CR>",
   { noremap = true, silent = true }
 )
--- Toggle terminal
+-- Toggle bottom terminal
 vim.api.nvim_set_keymap(
   "n",
   "<leader>tt",
@@ -73,7 +73,7 @@ vim.api.nvim_set_keymap(
   { noremap = true, silent = true }
 )
 
--- In your keymaps configuration
+-- Split Buffer configuration
 vim.api.nvim_set_keymap("n", "<leader>sh", ":split<CR>", { desc = "Split horizontal" })
 vim.api.nvim_set_keymap("n", "<leader>sv", ":vsplit<CR>", { desc = "Split vertical" })
 vim.api.nvim_set_keymap("n", "<leader>sx", ":close<CR>", { desc = "Close split" })
