@@ -87,7 +87,7 @@ source <(fzf --zsh)
 
 # add autojump 
 
-[[ -s /usr/share/autojump/autojump.sh ]] && source /usr/share/autojump/autojump.sh
+# [[ -s /usr/share/autojump/autojump.sh ]] && source /usr/share/autojump/autojump.sh
 
 # User configuration
 
