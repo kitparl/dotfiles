@@ -151,3 +151,16 @@ function tm() {
         echo "Use 'tmux-force' if you really want to nest sessions"
     fi
 }
+
+echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.zshrc
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
